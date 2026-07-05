@@ -1,11 +1,5 @@
-export default function HomePage() {
-  return (
-    <main className="min-h-screen p-8">
-      <h1 className="text-3xl font-bold">KeyRoster</h1>
+import { redirect } from "next/navigation";
 
-      <p className="mt-4 text-muted-foreground">
-        Mythic+ roster management app.
-      </p>
-    </main>
-  );
+export default function HomePage() {
+  redirect("/dashboard");
 }
